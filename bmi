@@ -1,0 +1,31 @@
+print (" PROGRAM TO CALCULATE BODY INDEX MASS\n")
+name    = input ("  ENTER YOU NAME:")
+age     = int(input ("  ENTER YOUR AGE :"))
+gender  = input("  ENTER YOUR GENDER :")
+city    = input ("  ENTER YOUR CITY :")
+goal    = input ("  ENTER YOUR GOAL :")
+
+weight  = float(input("  ENTER YOUR WEIGHT :"))
+height  = float(input("  ENTER YOUR HEIGHT (in meters :"))
+
+bmi     = (weight*1/2.2)/( height**2 )
+
+print(f"YOUR WEIGHT IS {weight} LBS")
+
+print(f"{name} YOUR BMI IS : {bmi}")
+
+
+if bmi < 15 :
+            print(f"  {name} is underweight by {bmi}     ")
+else :
+            print(f"  {name} is overweight by {bmi -15}  ")
+
+
+
+bmr =(10*weight+6.25*height -5*age+5)
+
+bmrw = (10*weight+6.25*height -5*age+161)
+if gender == " male ":
+    print(  f" {name} YOUR MAINTENANCE CALORIES ARE  {bmr} CALORIES A DAY ")
+else :
+     print(f" {name} YOUR MAINTENANCE CALORIES ARE {bmrw} CALORIES A DAY ")
